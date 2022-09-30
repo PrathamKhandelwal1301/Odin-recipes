@@ -1,3 +1,45 @@
+h1{
+  font-size: 100px;
+  position: absolute;
+  left : 700px;
+  top: 20px;
+}
+
 h3{
-  display: inline;
+  display: inline-block;
+  font-size: 50px;
+  top: 200px;
+}
+img{
+  position: absolute;
+  top: 400px;
+  width:320px;
+  transition: .5s;
+  transition-delay: .1s;
+  margin: 200 0 0 0;
+  border-radius: 25px;
+}
+img:hover{
+  width:400px;
+}
+.lasagna{
+  position: absolute;
+  left: 320px;
+}
+.pizza{
+  position: absolute;
+  left : 1265px;
+}
+.pasta{
+  position: absolute;
+  left: 830px;
+}
+.l-image{
+  left : 320px;
+}
+.pas-image{
+  left : 740px;
+}
+.pi-image{
+  left : 1175px;
 }
