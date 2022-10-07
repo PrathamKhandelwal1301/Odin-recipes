@@ -1,54 +1,30 @@
 body {
   margin: 0;
 }
-
+h1{
+  font-weight: lighter;
+}
 .heading {
   display: inline-block;
+  font-family: 'Pacifico', cursive;
   font-size: 50px;
   height: 300px;
   position: absolute;
   width: 100%;
 }
-
 #heading{
   display: block;
   height : 115px;
   margin: 91.5px auto;
-  width: 570px;
+  width: max-content;
 }
 h3 {
+  position: absolute;
   display: inline-block;
   font-size: 25px;
-  top: 200px;
-}
-
-img {
-  border-radius: 25px;
-  top: 400px;
-  transition: .5s;
-  transition-delay: .1s;
   width: 160px;
+  text-align: center;
 }
-
-img:hover {
-  width: 180px;
-}
-
-.l-image {
-  left: 40px;
-  position: absolute;
-}
-
-.pas-image {
-  left: 240px;
-  position: absolute;
-}
-
-.pi-image {
-  right: 40px;
-  position: absolute;
-}
-
 .italian {
   display: inline-block;
   height: 400px;
@@ -56,4 +32,38 @@ img:hover {
   right: 0;
   top: 300px;
   width: 640px;
+}
+img {
+  border-radius: 25px;
+  top: 400px;
+  transition: .5s;
+  transition-delay: .1s;
+  width: 160px;
+}
+img:hover {
+  width: 180px;
+}
+.lasagna{
+  left : 40px;
+}
+.l-image {
+  top: 80px;
+  left: 40px;
+  position: absolute;
+}
+.pasta{
+  left : 240px;
+}
+.pas-image {
+  top: 80px;
+  left: 240px;
+  position: absolute;
+}
+.pizza{
+  right: 40px;
+}
+.pi-image {
+  top: 80px;
+  left: 440px;
+  position: absolute;
 }
