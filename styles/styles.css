@@ -4,26 +4,26 @@ body {
 #cuisine-section-1{
   background-color: #FFF7E9;
   height : 600px;
-  width : 100%;
   position: absolute;
-  top: 1060px;
+  top: 960px;
+  width : 100%;
 }
 #cuisine-section-2{
   height : 600px;
   width : 100%;
   position: absolute;
-  top: 1660px;
+  top: 1560px;
 }
 .country-name-odd{
+  display: block;
   font-family: 'roboto Condensed', sans-serif;
   font-size : 80px;
-  display: block;
   height: max-content;
+  left:240px;
   margin:0;
   position: absolute;
   top: 150px;
   width:max-content;
-  left:240px;
 }
 h1{
   font-weight: lighter;
@@ -32,23 +32,23 @@ h2{
   margin:0;
 }
 h3 {
-  position: absolute;
   display: inline-block;
   font-size: 25px;
-  width: 240px;
-  text-align: center;
   margin: 0;
+  position: absolute;
+  text-align: center;
   top: 50px;
+  width: 240px;
 }
 h4{
   font-family: 'roboto Condensed', sans-serif;
-  font-weight: 600;
-  position:absolute;
-  margin: 0;
-  opacity: 0.7;
   font-size: 40px;
-  top: 300px;
+  font-weight: 600;
   left:260px;
+  margin: 0;
+  position:absolute;
+  opacity: 0.7;
+  top: 300px;
 }
 .heading {
   background-color: #FF731D;
@@ -56,16 +56,28 @@ h4{
   display: inline-block;
   font-family: 'Pacifico', cursive;
   font-size: 100px;
-  height: max-content;
+  height: 960px;
   position: absolute;
   width: 100%;
-  height: 1060px;
 }
 #heading{
-  display: block;
+  animation: floatin 3s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  display: inline;
   height : max-content;
-  margin: 91.5px auto;
-  width: max-content;
+  margin: 0 auto;
+  opacity: 0;
+  top: 120px;
+  text-align: center;
+}
+@keyframes floatin {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 .italian {
   display: inline-block;
@@ -76,12 +88,14 @@ h4{
 }
 img {
   border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   top: 400px;
   transition: .5s;
   transition-delay: .1s;
   width: 240px;
 }
 img:hover {
+  box-shadow: rgba(255,130,130, 0.4) 5px 5px, rgba(255,130,130, 0.3) 10px 10px, rgba(255,130,130, 0.2) 15px 15px, rgba(255,130,130, 0.1) 20px 20px, rgba(255,130,130, 0.05) 25px 25px;
   width: 260px;
 }
 .lasagna{
@@ -89,35 +103,63 @@ img:hover {
   left : 40px;
 }
 .l-image {
-  top: 100px;
   left: 40px;
   position: absolute;
+  top: 100px;
 }
 p{
   font-family: 'roboto Condensed', sans-serif;
+  font-size: 40px;
   font-weight: 100;
-  position: absolute;
+  left:260px;
   margin: 0;
   opacity: 0.5;
-  font-size: 40px;
+  position: absolute;
   top: 350px;
-  left:260px;
 }
 .pasta{
   font-family: 'roboto Condensed', sans-serif;
   left : 320px;
 }
 .pas-image {
-  top: 100px;
   left: 320px;
   position: absolute;
+  top: 100px;
 }
 .pizza{
   font-family: 'roboto Condensed', sans-serif;
   left: 600px;
 }
 .pi-image {
-  top: 100px;
   left: 600px;
   position: absolute;
+  top: 100px;
+}
+.scroll{
+  animation: updown 2s infinite;
+  animation-delay: 1.5s;
+  bottom: 60px;
+  border-bottom: 10px solid #FFF7E9;
+  border-radius: 10px;
+  border-right: 10px solid #FFF7E9;
+  height: 80px;
+  left: 900px;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 80px;
+}
+@keyframes updown {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+    bottom:100px;
+  }
+  100%{
+    bottom:60px;
+    opacity: 0;
+  }
 }
