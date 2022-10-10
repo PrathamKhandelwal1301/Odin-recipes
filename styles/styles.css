@@ -2,17 +2,43 @@ body {
   margin: 0;
 }
 #cuisine-section-1{
+  z-index:5;
   background-color: #FFF7E9;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   height : 600px;
-  position: absolute;
+  position: relative;
   top: 960px;
   width : 100%;
 }
 #cuisine-section-2{
+  background-color: #F8EDE3;
   height : 600px;
   width : 100%;
   position: absolute;
   top: 1560px;
+}
+#cuisine-section-3{
+  background-color: #FFF7E9;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  height : 600px;
+  position: absolute;
+  top: 2160px;
+  width : 100%;
+  z-index: 10;
+}
+#cuisine-section-4{
+  background-color: #F8EDE3;
+  height : 600px;
+  width : 100%;
+  position: absolute;
+  top: 2760px;
+}
+#end{
+  background-color: #06283D;
+  height : 300px;
+  width : 100%;
+  position: absolute;
+  top: 3360px;
 }
 .country-name-odd{
   display: block;
@@ -44,14 +70,18 @@ h4{
   font-family: 'roboto Condensed', sans-serif;
   font-size: 40px;
   font-weight: 600;
-  left:260px;
-  margin: 0;
   position:absolute;
   opacity: 0.7;
   top: 300px;
 }
+h5{
+  font-size: 50px;
+  margin:0;
+  text-align: center;
+}
 .heading {
   background-color: #FF731D;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   color: #FFF7E9;
   display: inline-block;
   font-family: 'Pacifico', cursive;
@@ -59,14 +89,13 @@ h4{
   height: 960px;
   position: absolute;
   width: 100%;
+  z-index: -10;
 }
 #heading{
   animation: floatin 3s 1;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
   display: inline;
-  height : max-content;
-  margin: 0 auto;
   opacity: 0;
   top: 120px;
   text-align: center;
@@ -111,7 +140,6 @@ p{
   font-family: 'roboto Condensed', sans-serif;
   font-size: 40px;
   font-weight: 100;
-  left:260px;
   margin: 0;
   opacity: 0.5;
   position: absolute;
@@ -162,4 +190,145 @@ p{
     bottom:60px;
     opacity: 0;
   }
+}
+.chinese{
+  display: inline-block;
+  height: 600px;
+  position: absolute;
+  left : 0;
+  width: 880px;
+}
+.dum-img{
+  left: 40px;
+  position: absolute;
+  top: 100px;
+}
+.cho-img{
+  left: 320px;
+  position: absolute;
+  top: 100px;
+}
+.kho-img{
+  left: 600px;
+  position: absolute;
+  top: 100px;
+}
+.dumplings{
+  font-family: 'roboto Condensed', sans-serif;
+  left : 40px;
+}
+.chowmien{
+  font-family: 'roboto Condensed', sans-serif;
+  left : 320px;
+}
+.khow-suey{
+  font-family: 'roboto Condensed', sans-serif;
+  left: 600px;
+}
+.italy{
+  left:260px;
+  margin: 0;
+}
+.country-name-even{
+  display: block;
+  font-family: 'roboto Condensed', sans-serif;
+  font-size : 80px;
+  height: max-content;
+  right:410px;
+  margin:0;
+  position: absolute;
+  top: 150px;
+  width:max-content;
+}
+.chinese-quote-m{
+  right : 180px;
+  margin: 0;
+}
+.chinese-quote-t{
+  width: 645px;
+  right: 100px;
+  margin-top: 15px;
+}
+.indian{
+  display: inline-block;
+  height: 600px;
+  position: absolute;
+  right: 0;
+  width: 880px;
+}
+.but-img{
+  left: 40px;
+  position: absolute;
+  top: 100px;
+}
+.dos-img{
+  left: 320px;
+  position: absolute;
+  top: 100px;
+}
+.idl-img{
+  left: 600px;
+  position: absolute;
+  top: 100px;
+}
+.butter-chicken{
+  font-family: 'roboto Condensed', sans-serif;
+  left : 40px;
+}
+.dosa{
+  font-family: 'roboto Condensed', sans-serif;
+  left : 320px;
+}
+.idli{
+  font-family: 'roboto Condensed', sans-serif;
+  left: 600px;
+}
+.indian-quote{
+  left:260px;
+  margin: 0;
+}
+.japanese{
+  display: inline-block;
+  height: 600px;
+  position: absolute;
+  left : 0;
+  width: 880px;
+}
+.ram-img{
+  left: 40px;
+  position: absolute;
+  top: 100px;
+}
+.oni-img{
+  left: 320px;
+  position: absolute;
+  top: 100px;
+}
+.shu-img{
+  left: 600px;
+  position: absolute;
+  top: 100px;
+}
+.ramen{
+  font-family: 'roboto Condensed', sans-serif;
+  left : 40px;
+}
+.onigiri{
+  font-family: 'roboto Condensed', sans-serif;
+  left : 320px;
+}
+.sushi{
+  font-family: 'roboto Condensed', sans-serif;
+  left: 600px;
+}
+.jap-quo{
+  width: 645px;
+  right : 170px;
+  margin: 0;
+}
+hr{
+  background-color: #FFCA03;
+  height: 15px;
+  margin: 0;
+  border: 0px;
 }
