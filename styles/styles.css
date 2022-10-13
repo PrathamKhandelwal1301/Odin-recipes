@@ -61,16 +61,17 @@ h3 {
 }
 h4{
   font-family: 'roboto Condensed', sans-serif;
-  font-size: 40px;
+  font-size: 5vh;
   font-weight: 900;
   position:absolute;
   opacity: 0.7;
-  top: 50%;
+  top: 55%;
 }
-h5{
-  font-size: 50px;
+.h5{
+  font-size: 5vh;
   margin:0;
   text-align: center;
+  opacity: 0.6;
 }
 .heading {
   background-color: #FF731D;
