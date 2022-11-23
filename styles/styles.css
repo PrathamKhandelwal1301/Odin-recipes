@@ -21,6 +21,12 @@ body {
   width : 100%;
   position: relative;
 }
+.country-even-quote{
+  margin: 0;
+  right: 0;
+  width: 40%;
+  text-align: center;
+}
 .country-name-odd{
   display: block;
   font-family: 'roboto Condensed', sans-serif;
@@ -44,28 +50,17 @@ body {
   width:40%;
   text-align: center;
 }
-h1{
-  font-weight: lighter;
-}
-h2{
-  margin:0;
-}
-h3 {
-  display: inline-block;
-  font-size: 25px;
+.country-quote-odd{
   margin: 0;
-  position: absolute;
+  width:40%;
   text-align: center;
-  top: 50px;
-  width: 28vh;
 }
-h4{
-  font-family: 'roboto Condensed', sans-serif;
-  font-size: 5vh;
-  font-weight: 900;
-  position:absolute;
-  opacity: 0.7;
-  top: 55%;
+.even{
+  display: inline-block;
+  height: 71vh;
+  position: absolute;
+  left : 0;
+  width: 60%;
 }
 .h5{
   font-size: 5vh;
@@ -84,22 +79,32 @@ h4{
   position: relative;
   width: 100%;
 }
-#heading{
-  animation: floatin 3s 1;
-  animation-fill-mode: forwards;
-  animation-delay: 0.5s;
-  display: inline;
-  opacity: 0;
-  top: 120px;
-  text-align: center;
+.img-1 {
+  left: 10%;
+  position: absolute;
+  top: 100px;
 }
-@keyframes floatin {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+.img-2 {
+  left: 40%;
+  position: absolute;
+  top: 100px;
+}
+.img-3 {
+  left: 70%;
+  position: absolute;
+  top: 100px;
+}
+.name-1{
+  font-family: 'roboto Condensed', sans-serif;
+  left : 10%;
+}
+.name-2{
+  font-family: 'roboto Condensed', sans-serif;
+  left : 40%;
+}
+.name-3{
+  font-family: 'roboto Condensed', sans-serif;
+  left: 70%;
 }
 .odd {
   display: inline-block;
@@ -107,54 +112,6 @@ h4{
   position: absolute;
   right: 0;
   width: 60%;
-}
-img {
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  top: 400px;
-  transition: .5s;
-  transition-delay: .1s;
-  width: 28vh;
-}
-img:hover {
-  box-shadow: rgba(255,130,130, 0.4) 5px 5px, rgba(255,130,130, 0.3) 10px 10px, rgba(255,130,130, 0.2) 15px 15px, rgba(255,130,130, 0.1) 20px 20px, rgba(255,130,130, 0.05) 25px 25px;
-  width: 30vh;
-}
-.name-1{
-  font-family: 'roboto Condensed', sans-serif;
-  left : 10%;
-}
-.img-1 {
-  left: 10%;
-  position: absolute;
-  top: 100px;
-}
-p{
-  font-family: 'roboto Condensed', sans-serif;
-  font-size: 40px;
-  font-weight: 100;
-  margin: 0;
-  opacity: 0.5;
-  position: absolute;
-  top: 60%;
-}
-.name-2{
-  font-family: 'roboto Condensed', sans-serif;
-  left : 40%;
-}
-.img-2 {
-  left: 40%;
-  position: absolute;
-  top: 100px;
-}
-.name-3{
-  font-family: 'roboto Condensed', sans-serif;
-  left: 70%;
-}
-.img-3 {
-  left: 70%;
-  position: absolute;
-  top: 100px;
 }
 .scroll{
   animation: updown 2s infinite;
@@ -184,27 +141,89 @@ p{
     opacity: 0;
   }
 }
-.even{
+h1{
+  font-weight: lighter;
+}
+h2{
+  margin:0;
+}
+h3 {
   display: inline-block;
-  height: 71vh;
+  font-size: 25px;
+  margin: 0;
   position: absolute;
-  left : 0;
-  width: 60%;
-}
-.country-quote-odd{
-  margin: 0;
-  width:40%;
   text-align: center;
+  top: 50px;
+  width: 28vh;
 }
-.country-even-quote{
-  margin: 0;
-  right: 0;
-  width: 40%;
+h4{
+  font-family: 'roboto Condensed', sans-serif;
+  font-size: 5vh;
+  font-weight: 900;
+  position:absolute;
+  opacity: 0.7;
+  top: 55%;
+}
+h5{
+  font-family: 'roboto Condensed', sans-serif;
+  font-size: 6vh;
   text-align: center;
+  font-style: normal;
+  margin: 2%;
+  color: white;
 }
 hr{
-  background-color: #FFCA03;
+  background-color: #D4AC2B;
   height: 15px;
   margin: 0;
   border: 0px;
+}
+#heading{
+  animation: floatin 3s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  display: inline;
+  opacity: 0;
+  top: 120px;
+  text-align: center;
+}
+@keyframes floatin {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+img {
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  top: 400px;
+  transition: .5s;
+  transition-delay: .1s;
+  width: 28vh;
+}
+img:hover {
+  box-shadow: rgba(255,130,130, 0.4) 5px 5px, rgba(255,130,130, 0.3) 10px 10px, rgba(255,130,130, 0.2) 15px 15px, rgba(255,130,130, 0.1) 20px 20px, rgba(255,130,130, 0.05) 25px 25px;
+  width: 30vh;
+}
+p{
+  font-family: 'roboto Condensed', sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  margin: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 60%;
+}
+.insta:first-child{
+  size:4vh;
+  border: none;
+}
+.socials{
+  height: 30%;
+}
+i{
+  font-family: 'roboto Condensed', sans-serif;
+  font-size: 4vh;
 }
